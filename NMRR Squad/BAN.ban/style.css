@@ -1,52 +1,150 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
-* {
-	margin: 0;
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+body{
 	padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
-
-.bg{
-	width: 98.79vw;
+header{
+	background-image: url('image/header/first.jpg');
+	width: 100vw;
     height: 100vh;
-    animation: fabein 2s 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
+.music{
+    width: 100vw;
+    height: 60px;
+    background: #778899;
+    display: flex;
+}
+.musictwo{
+    display: flex;
+    position: relative;
+    top: 5%;
+    left: 50%;
+}
+.musictext{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    position: relative;
+    top: 5%;
+    left: 40%;
+}
+.logo{
+    animation: fadeIn 3s 1;
+    width: 50vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    z-index: 1;
+	animation: fadeIn 5s 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
+}
+nav a {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s all;
+}
+nav a:hover {
+    transform: scale(1.2);
+    color: rgb(255,255,0);
+    transition: 0.4s all;
+}
+.posstandart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.posstandarttwo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    position: relative;
+    left: 49%;
+    top: -30vh;
+    justify-content: center;
+}
+.textheader{
+    width: 30ch;
+    font-size: 50px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 3s steps(30);
+}
+.textstandtart{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.dmitriy{
+    border: solid;
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    left: 5%;
+}
+.book{
+    border: solid;
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+    left: 35%;
+    top: 100px;
 
-.header {
-	background-color: gray;
-	height: 50px;
-	font-size: 0.8em;
-	margin-left: 0px;
-	margin-right: 0px;
-	min-width: 100px;
 }
-ul.menu li {
-	float: left;
-	padding: 0 10px 0 9px;
-	list-style: none;
-	margin: 1px 2px 0 0;
-}
-
-ul.menu li a {
-	text-decoration: none;
-	font-family: 'Fredoka One', cursive;
-	font-size: 1.6em;
-	display: block;
-	padding: 10px 10px 10px 160px;
-	color: #fff;
-	text-decoration-color: none;
-}
-
-ul.menu li.selected a {
-	color: #aeb002;
-}
-
-ul.menu li a:hover {
-	color: #e4ec04;
-}
-@keyframes fabein {
-    0%{
+/*.parallax {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+@keyframes fadeIn {
+    0% {
         opacity: 0;
     }
-    100%{
-       opacity: 1;
+    100% {
+        opacity: 1;
     }
 }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes type{
+    from { width: 0; }
+}
+
